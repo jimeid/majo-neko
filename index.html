@@ -14,9 +14,9 @@
 <body style="direction: rtl;">
     <div id="up"></div>
     <i class="fa fa-shopping-basket" aria-hidden="true" style="font-size: x-large; padding: 7px;"></i>
-    <div id="godfather">
+    <div id="godfather" class="col-12">
         <a href="#up" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        <header class="text-center">
+        <header class="text-center col-11">
             <img src="image/Screenshot_2024-01-10_221308-removebg-preview.png" id="cat">
             <h2>Majo Neko</h2>
             <ul class="list-inline">
@@ -43,16 +43,16 @@
                 </a>
             </ul>
         </header>
-        <div class="d-flex flex-row my-3 mx-5">
+        <div class="d-flex flex-row my-3 mx-5 col-11">
             <div class="accordion w-50">
                 <div class="accordion-item bg-warning-subtle">
-                    <h2 class="accordion-header"><button class="accordion-button bg-danger-subtle"
-                            data-bs-toggle="collapse" data-bs-target="#accordian1">ورود به سایت</button></h2>
+                    <h2 class="accordion-header"><button class="accordion-button bg-danger-subtle border-0"
+                            data-bs-toggle="collapse" data-bs-target="#accordian1">ثبت نام</button></h2>
                     <div class="collapse accordion-collapse" id="accordian1">
                         <div class="accordion-body">
                             <div class="card">
                                 <div class="card-header">
-                                    <h1 class="card-title">ورود به سایت</h1>
+                                    <h1 class="card-title">ثبت نام</h1>
                                 </div>
                                 <div class="card-body">
                                     <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#heremod">برای
@@ -65,18 +65,20 @@
                                                     <button class="btn-close" data-bs-dismiss="modal"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form>
+                                                    <form name="sabtname">
                                                         <div class="input-group">
                                                             <label for="">ایمیل:</label><br>
                                                             <input type="email" placeholder="ایمیل را وارد کنید"
-                                                                class="form-control">
+                                                                class="form-control" id="boxo5">
                                                             <span class="input-group-text">@gmail.com</span>
                                                         </div>
 
                                                         <label for="">شماره تلفن:</label><br>
-                                                        <input type="text" placeholder="شماره خود را وارد کنید"><br>
+                                                        <input type="text" placeholder="شماره خود را وارد کنید"
+                                                            id="boxo4"><br>
                                                         <label for="">رمز:</label><br>
-                                                        <input type="text" placeholder="رمز خود را قرار دهید"><br>
+                                                        <input type="text" placeholder="رمز خود را قرار دهید"
+                                                            id="boxo3"><br>
                                                         <label for="">ایا ا زاین صفحه راضی هستید؟ نطر خود را بیان
                                                             کنید!</label><br>
                                                         <label for="">بله عالیه</label><input type="radio" name="good">
@@ -85,10 +87,11 @@
                                                         <textarea name="" id="" cols="30" rows="5"
                                                             placeholder="Enter your suggestions...">
                                                         </textarea>
-                                                        <input type="button" value="submit">
+                                                        <input type="button" value="submit"
+                                                            id="button2">
                                                     </form>
                                                 </div>
-                                                <div class="modal-footer">
+                                                <div class=" modal-footer">
                                                     <h3 data-bs-dismiss="modal">کلیک کنید برای بسته شدن</h3>
                                                 </div>
                                             </div>
@@ -101,15 +104,15 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion w-50">
+            <div class="accordion w-50 col-11">
                 <div class="accordion-item bg-danger-subtle">
-                    <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle"
-                            data-bs-toggle="collapse" data-bs-target="#accordian2">ورود دوباره به سایت</button></h2>
+                    <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle border-0"
+                            data-bs-toggle="collapse" data-bs-target="#accordian2">ورود به سایت</button></h2>
                     <div class="collapse accordion-collapse" id="accordian2">
                         <div class="accordion-body">
                             <div class="card">
                                 <div class="card-header">
-                                    <h1 class="card-title">ورود دوباره به سایت</h1>
+                                    <h1 class="card-title">ورود به سایت</h1>
                                 </div>
                                 <div class="card-body">
                                     <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#heremod1">برای
@@ -118,20 +121,23 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h3 class="modal-title">اطلاعات خود را وارد کنید:</h3>
+                                                    <h3 class="modal-title vorod">اطلاعات خود را وارد کنید:</h3>
                                                     <button class="btn-close" data-bs-dismiss="modal"></button>
                                                 </div>
                                                 <div class="modal-body">
                                                     <form>
                                                         <div class="input-group">
-                                                            <label for="">ایمیل:</label><br>
+                                                            <label for="#boxo1">ایمیل:</label><br>
                                                             <input type="email" placeholder="ایمیل را وارد کنید"
-                                                                class="form-control">
-                                                            <span class="input-group-text">@gmail.com</span>
+                                                                class="form-control" id="boxo1">
+                                                                <p id="paragraph"></p>
+                                                            <span class=" input-group-text">@gmail.com</span>
                                                         </div>
                                                         <label for="">رمز:</label><br>
-                                                        <input type="text" placeholder="رمز خود را قرار دهید"><br>
-                                                        <input type="button" value="submit">
+                                                        <input type="text" placeholder="رمز خود را قرار دهید"
+                                                            id="boxo2"><br>
+                                                        <input type="button" value="submit"
+                                                            id="button1" onclick="addEventListener()">
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
@@ -150,15 +156,15 @@
         </div>
     </div>
 
-    <nav>
-        <div id="bay">
+    <nav class="row justify-content-center">
+        <div id="bay" class="col-12">
             <img src="image/Screenshot 2024-01-14 164836_ml_resize_x2.jpg" id="hello">
         </div><br><br>
-        <div id="bscroll">
-            <h1>⁕برخی از محصولات⁕</h1>
+        <div id="bscroll" class="mt-4 ">
+            <h1>برخی از محصولات</h1>
             <hr><br><br>
         </div>
-        <div class="scroll">
+        <div class="scroll col-12">
             <div class="clothes" id="dfrn"><img src="image/Butterfly Print Drop Shoulder Hoodie.jpeg" alt="">
                 <h6>سویشرت پروانه ای</h6>
                 <h6 class="text-decoration-line-through">500000</h6>
@@ -193,51 +199,51 @@
             </div>
         </div>
         <br><br>
-        <div id="ascroll">
-            <h1>⁕پرطرفدار⁕</h1>
+        <div id="ascroll" class="my-4">
+            <h1>پرطرفدار</h1>
             <hr>
         </div>
         <div>
     </nav>
-    <nav>
-        <div class="scroll">
-            <div class="clothes" id="dfrn"><img src="image/Retro O-Neck Knitted Striped Sweater.jpeg" alt="">
+    <nav class="row justify-content-center">
+        <div class="scroll col-12">
+            <div class="clothes col" id="dfrn"><img src="image/Retro O-Neck Knitted Striped Sweater.jpeg" alt="">
                 <h6></h6>
                 <h6 class="text-decoration-line-through">1000000</h6>
                 <h3 style="font-size: larger;">850000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
+            <div class="clothes col"><img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
                 <h6>کاردیگن تیلور سوییفت</h6>
                 <h3 style="font-size: larger;">1000000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/Multi Striped Flower Embroidery Sweater, US$36_00.jpeg" alt="">
+            <div class="clothes col"><img src="image/Multi Striped Flower Embroidery Sweater, US$36_00.jpeg" alt="">
                 <h6>بافت رنگین کمونی</h6>
                 <h3 style="font-size: larger;">800000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/Tie Front Frill Trim Puff Sleeve Crop Tee.jpeg" alt="">
+            <div class="clothes col"><img src="image/Tie Front Frill Trim Puff Sleeve Crop Tee.jpeg" alt="">
                 <h6>کراپ زرشکی</h6>
                 <h3 style="font-size: larger;">300000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/Tie Shoulder Ruched Two Layer Hem Cami Dress.jpeg" alt="">
+            <div class="clothes col"><img src="image/Tie Shoulder Ruched Two Layer Hem Cami Dress.jpeg" alt="">
                 <h6>پیراهن سبز پاستلی</h6>
                 <h3 style="font-size: larger;">600000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/mushrom.jpeg" alt="">
+            <div class="clothes col"><img src="image/mushrom.jpeg" alt="">
                 <h6>شلوارک قارچی</h6>
                 <h3 style="font-size: larger;">400000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
         </div><br><br>
-        <div id="ascroll">
-            <h1>⁕استایل کامل⁕</h1>
+        <div id="ascroll" class="mt-4">
+            <h1>استایل کامل</h1>
             <hr>
         </div>
-        <div class="scroll">
+        <div class="scroll row">
             <div class="clothes2"><img src="image/KAWAII.jpeg" style="height: 394px;">
                 <h4>استایل گرانچ</h4>
                 <h4 class="text-decoration-line-through">1000000</h4>
@@ -262,8 +268,8 @@
         </div>
 
     </nav>
-    <footer>
-        <div>
+    <footer class="row justify-content-center mt-5">
+        <div class="col-12">
             <div class="accordion w-100 d-inline-block" id="aboutus">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
@@ -289,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="col-12">
                 <div class="accordion w-100 d-inline-block" id="contact">
                     <div class="accordion-item">
                         <h3 class="accordion-header">
