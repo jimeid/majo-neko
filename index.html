@@ -16,10 +16,12 @@
     <i class="fa fa-shopping-basket" aria-hidden="true" style="font-size: x-large; padding: 7px;"></i>
     <div id="godfather" class="col-12">
         <a href="#up" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        <header class="text-center row justify-content-evenly">
-            <img src="image/Screenshot_2024-01-10_221308-removebg-preview.png" id="cat">
-            <h2>Majo Neko</h2>
-            <ul class="list-inline">
+        <header class="justify-content-evenly align-items-center">
+            <img src="image/Screenshot_2024-01-10_221308-removebg-preview.png" id="cat" class="col-2">
+                <p class="col-4 h2">Majo Neko</p>
+
+
+            <ul class="list-inline col-12">
                 <li class="list-inline-item mx-4">صفحه اصلی</li>
                 <li class="list-inline-item mx-4 dropdown">
                     ارتباط با ما
@@ -43,8 +45,8 @@
                 </a>
             </ul>
         </header>
-        <div class="d-flex flex-row my-3 mx-5 col-11">
-            <div class="accordion w-50">
+        <div class="row my-3 mx-5">
+            <div class="accordion w-50 col-10">
                 <div class="accordion-item bg-warning-subtle">
                     <h2 class="accordion-header"><button class="accordion-button bg-danger-subtle border-0"
                             data-bs-toggle="collapse" data-bs-target="#accordian1">ثبت نام</button></h2>
@@ -87,8 +89,7 @@
                                                         <textarea name="" id="" cols="30" rows="5"
                                                             placeholder="Enter your suggestions...">
                                                         </textarea>
-                                                        <input type="button" value="submit"
-                                                            id="button2">
+                                                        <input type="button" value="submit" id="button2">
                                                     </form>
                                                 </div>
                                                 <div class=" modal-footer">
@@ -104,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion w-50 col-11">
+            <div class="accordion w-50 col-10">
                 <div class="accordion-item bg-danger-subtle">
                     <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle border-0"
                             data-bs-toggle="collapse" data-bs-target="#accordian2">ورود به سایت</button></h2>
@@ -130,14 +131,14 @@
                                                             <label for="#boxo1">ایمیل:</label><br>
                                                             <input type="email" placeholder="ایمیل را وارد کنید"
                                                                 class="form-control" id="boxo1">
-                                                                <p id="paragraph"></p>
+                                                            <p id="paragraph"></p>
                                                             <span class=" input-group-text">@gmail.com</span>
                                                         </div>
                                                         <label for="">رمز:</label><br>
                                                         <input type="text" placeholder="رمز خود را قرار دهید"
                                                             id="boxo2"><br>
-                                                        <input type="button" value="submit"
-                                                            id="button1" onclick="addEventListener()">
+                                                        <input type="button" value="submit" id="button1"
+                                                            onclick="addEventListener()">
                                                     </form>
                                                 </div>
                                                 <div class="modal-footer">
@@ -243,21 +244,21 @@
             <h1>استایل کامل</h1>
             <hr>
         </div>
-        <div class="scroll row">
-            <div class="clothes2"><img src="image/KAWAII.jpeg" style="height: 394px;">
+        <div class="scroll col-1">
+            <div class="clothes2" style="margin-right: 10px;"><img src="image/KAWAII.jpeg" style="height: 394px;">
                 <h4>استایل گرانچ</h4>
                 <h4 class="text-decoration-line-through">1000000</h4>
                 <h3 style="font-size: larger;">850000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes2"><img src="image/Aesthetic Outfits for Early 2022 .jpeg" style="height: 394px;">
+            <div class="clothes2 col-1"><img src="image/Aesthetic Outfits for Early 2022 .jpeg" style="height: 394px;">
                 <div>
                     <h4>استایل فری گرانچ</h4>
                     <h3 style="font-size: larger;">1000000</h3>
                     <p class="btn btn-light">اضافه به سبد خرید</p>
                 </div>
             </div>
-            <div class="clothes2"><img
+            <div class="clothes2 col-1"><img
                     src="image/Outfit Ideas 2023 Fall Outfits Comfy Outfits Fashion Everyday Looks Fashion Outfits.jpeg"
                     alt="">
                 <h4>استایل پاییزی</h4>
@@ -269,55 +270,53 @@
 
     </nav>
     <footer class="row justify-content-center mt-5">
-        <div class="col-12">
-            <div class="accordion w-100 d-inline-block" id="aboutus">
-                <div class="accordion-item">
-                    <h3 class="accordion-header">
-                        <button class="accordion-button bg-light-subtle" data-bs-toggle="collapse"
-                            data-bs-target="#hi">درباره ما</button>
-                    </h3>
-                    <div id="hi" class="collapse accordion-collapse">
-                        <div class="accordion-body">
-                            <div class="card w-100  my-3">
-                                <div class="card-header bg-danger-subtle">
-                                    <h1>درباره ما</h1>
-                                </div>
-                                <div class="card-body bg-warning-subtle">
-                                    <p class="card-text">فروشگاه ماجو نکو که به معنی گربه جادوگر است از سال 1395 شروع به
-                                        کار کرده است و تمامی ایتم های موجود در سایت در ایران موجود هستند اما تمامی
-                                        محصولات سفارش سایت خارجی شین است(shein)</p>
-                                </div>
+        <div class="accordion w-100 d-inline-block col-12" id="aboutus">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button bg-light-subtle" data-bs-toggle="collapse"
+                        data-bs-target="#hi">درباره ما</button>
+                </h3>
+                <div id="hi" class="collapse accordion-collapse">
+                    <div class="accordion-body">
+                        <div class="card w-100  my-3">
+                            <div class="card-header bg-danger-subtle">
+                                <h1>درباره ما</h1>
+                            </div>
+                            <div class="card-body bg-warning-subtle">
+                                <p class="card-text">فروشگاه ماجو نکو که به معنی گربه جادوگر است از سال 1395 شروع به
+                                    کار کرده است و تمامی ایتم های موجود در سایت در ایران موجود هستند اما تمامی
+                                    محصولات سفارش سایت خارجی شین است(shein)</p>
                             </div>
                         </div>
-                        <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://web.telegram.org/" target="_blank"><i class="fa fa-telegram"></i></a>
+                    </div>
+                    <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://web.telegram.org/" target="_blank"><i class="fa fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion w-100 d-inline-block col-12" id="contact">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button bg-light-subtle" data-bs-toggle="collapse"
+                        data-bs-target="#hi2">شماره پشتیبانی</button>
+                </h3>
+                <div id="hi2" class="collapse accordion-collapse">
+                    <div class="accordion-body">
+                        <div class="card w-100  my-3">
+                            <div class="card-header bg-danger-subtle">
+                                <h1>پشتیبانی</h1>
+                            </div>
+                            <div class="card-body bg-warning-subtle">
+                                <h4 class="card-text">شماره های پشتیبانی:</h4>
+                                <h4 class="card-text">013-27639791</h4>
+                                <h4 class="card-text">013-91530114</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="accordion w-100 d-inline-block" id="contact">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button bg-light-subtle" data-bs-toggle="collapse"
-                                data-bs-target="#hi2">شماره پشتیبانی</button>
-                        </h3>
-                        <div id="hi2" class="collapse accordion-collapse">
-                            <div class="accordion-body">
-                                <div class="card w-100  my-3">
-                                    <div class="card-header bg-danger-subtle">
-                                        <h1>پشتیبانی</h1>
-                                    </div>
-                                    <div class="card-body bg-warning-subtle">
-                                        <h4 class="card-text">شماره های پشتیبانی:</h4>
-                                        <h4 class="card-text">013-27639791</h4>
-                                        <h4 class="card-text">013-91530114</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
     </footer>
     </div>
     <script src="bootstrap.min.js">
