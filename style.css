@@ -1,14 +1,14 @@
 @font-face {
     font-family:Salamat ;
     src: url(Salamat.ttf);
-}
+} 
 body{
-    font-family: Salamat;
+     font-family: Salamat;
     background: rgb(195,129,50);
     background: radial-gradient(circle, rgba(195,129,50,1) 0%, rgba(255,255,224,1) 100%); 
 }
 #godfather{
-    background-color:#fffff075;
+    background-color:#fffff09d;
 }
 header{
     background-color: #FFEBCD;
@@ -16,16 +16,10 @@ header{
     width: 95%;
     margin: auto;
 }
-header > img{
-    width: 90px;
-    display: inline-block;
-    position: relative;
-    left: 550px;
-}
 header>h2{
-    display: inline-block;
     position: relative;
-    left: 566px;
+    left: 20px;
+    display: inline-block;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 27px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 24.3px; } h3 { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: AppleGothic; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18.9px; } pre { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; ;
 }
 .dropdown {
@@ -57,10 +51,6 @@ a{
 }
 #ins:hover{
     color: rgb(237, 74, 74);
-}
-ul{
-    position: relative;
-    left: 400px;
 }
 #hello{
     border-radius: 30px;
@@ -110,19 +100,6 @@ hr{
     text-align: center;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 27px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 24.3px; } h3 { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: AppleGothic; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18.9px; } pre { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;
 }       
-@media screen and (max-width: 412px){
-    #godfather{width: 412px;}
-    header>img{position: relative; left: 60px;}
-    header>h2{position: relative;left: 70px;}
-    header>ul{position: relative; left: 80px;}
-    .clothes>img{width: 100px;}
-    #dfrn{margin-right: 500px;}
-    
-}
-@font-face {
-    font-family:Salamat ;
-    src: url(A-Salamat/);
-}
 #godfather{
     font-family: Salamat;
 }
@@ -160,4 +137,7 @@ ul>a{
 }
 .clothes2>p{
     font-size: x-large;
+}
+script{
+    background-color: #f6dc88;
 }
