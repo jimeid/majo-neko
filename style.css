@@ -3,18 +3,15 @@
     src: url(Salamat.ttf);
 } 
 body{
-     font-family: Salamat;
+    font-family: Salamat;
     background: rgb(195,129,50);
-    background: radial-gradient(circle, rgba(195,129,50,1) 0%, rgba(255,255,224,1) 100%); 
-}
-#godfather{
-    background-color:#fffff09d;
+    background: radial-gradient(circle, rgb(181, 117, 39) 0%, #FFF2D7 100%); 
 }
 header{
-    background-color: #FFEBCD;
+    background-color: #AF8F6F;
     border-radius: 20px;
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 30px;
 }
 header>p{
     position: relative;
@@ -25,12 +22,13 @@ header>p{
 .dropdown {
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #DEAC80;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -52,37 +50,28 @@ a{
 #ins:hover{
     color: rgb(237, 74, 74);
 }
-#hello{
+.cloth_container{
+    background-image: url(image/Download\ premium\ image\ of\ Paper\ texture\ background\,\ simple\ design\ by\ mook\ about\ plain\ cream\ background\,\ white\ paper\ texture\,\ paper\ texture\ background\,\ paper\ texture\,\ and\ cream\ paper\ texture\ 6418185.jpg);
     border-radius: 30px;
-    width: 90%;
-}
-#bay{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.scroll{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url(image/Tiny\ Stars\ Navy\ On\ White\ Wallpaper.jpeg);
-    border-radius: 30px;
-    width: 100%;
-    padding: 20px;
-
     overflow-x: scroll;
+    width: 100%;
+    padding: 2%;
+}
+.clothes{
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+    background-color:  #ED9121;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 2px 15px 2px 15px;   
 }
 .clothes>img{
     width: 260px;
     border-radius: 30px;
-}
-.clothes{
-    background-color: wheat;
-    width: 400px;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 2px 15px 2px 15px;
-    display: inline-block;
+
 }
 #bscroll>h1{
     text-align: center;
@@ -93,9 +82,6 @@ hr{
     position: relative;
     right: 37%;
 }
-#dfrn{
-    margin-right: 450px;
-}
 #ascroll>h1{
     text-align: center;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 27px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 24.3px; } h3 { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: AppleGothic; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 18.9px; } pre { font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;
@@ -103,22 +89,12 @@ hr{
 #godfather{
     font-family: Salamat;
 }
-.clothes2>img{
-    width: 200px;
-    border-radius: 30px;
-}
-.clothes2{
-    width: 223px;
-    background-color: wheat;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 5px;
-}
+
 #arrow{
-        width: 70px;
-        position: fixed;
-        margin-right: 30px;
-        font-size: x-large;
+    width: 70px;
+    position: fixed;
+    margin-right: 30px;
+    font-size: x-large;
 }
 #hi>a{
     text-decoration: none;
@@ -135,6 +111,12 @@ ul>a{
 .clothes>p{
     font-size: x-large;
 }
-.clothes2>p{
+#singin{
     font-size: x-large;
+}
+#toolbar{
+    background-color: #ED9121;
+    border-radius: 20px;
+    width: 99%;
+    margin-bottom: 20px;
 }
