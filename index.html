@@ -7,21 +7,55 @@
     <title>majo neko</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="image/Screenshot_2024-01-10_221308-removebg-preview.png">
+    <link rel="icon" href="image/_MTqEDa5-removebg-preview.png">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body style="direction: rtl;">
     <div id="up"></div>
-    <i class="fa fa-shopping-basket" aria-hidden="true" style="font-size: x-large; padding: 7px;"></i>
+    <div id="toolbar" class="row justify-content-evenly">
+        <div class="d-flex flex-row">
+            <i class="fa fa-shopping-basket fs-2 m-3 col-10" aria-hidden="true"></i>
+            <i class="fa fa-align-justify fs-2 m-3 col-2 d-sm-none" data-bs-target="#thelist" data-bs-toggle="offcanvas" aria-controls="منو"></i>
+        </div>
+    </div>
+
     <div id="godfather" class="col-12">
         <a href="#up" id="arrow"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        <header class="justify-content-evenly align-items-center">
-            <img src="image/Screenshot_2024-01-10_221308-removebg-preview.png" id="cat" class="col-2">
-                <p class="col-4 h2">Majo Neko</p>
+        <header class=" row justify-content-evenly align-items-center">
+            <img src="image/_MTqEDa5-removebg-preview.png" id="cat" class="col-4 col-sm-1 col-md-2 col-lg-1">
+                <p class="col-4 col-sm-10 h2">Majo Neko</p>
 
 
-            <ul class="list-inline col-12">
+            <ul class="list-inline col-12 offcanvas offcanvas-start w-50" id="thelist">
+                <div class="d-flex justify-content-between">
+                    <h2 class="offcanvas-title fs-2">منو</h2>
+                </div>
+                <div class="offcanvas-body">
+                    <li class="list-inline-item mx-4 fs-4">صفحه اصلی</li>
+                    <li class="list-inline-item mx-4 dropdown fs-4">
+                        ارتباط با ما
+                        <div class="dropdown-content">
+                            <i class="fa fa-whatsapp"></i><a href="https://web.whatsapp.com/" id="wh" target="_blank">
+                                <p>واتساپ</p>
+                            </a>
+                            <i class="fa fa-telegram"></i><a href="https://web.telegram.org/" id="tel" target="_blank">
+                                <p>تلگرام</p>
+                            </a>
+                            <i class="fa fa-instagram"></i><a href="https://www.instagram.com" id="ins" target="_blank">
+                                <p>اینستاگرام</p>
+                            </a>
+                        </div>
+                    </li>
+                    <a href="#contact">
+                        <li class="list-inline-item mx-4 fs-4">پشتیبانی</li>
+                    </a>
+                    <a href="#aboutus">
+                        <li class="list-inline-item mx-4 fs-4">درباره ما</li>
+                    </a>
+                </div>
+            </ul>
+            <ul class="list-inline col-12 d-none d-sm-block">
                 <li class="list-inline-item mx-4">صفحه اصلی</li>
                 <li class="list-inline-item mx-4 dropdown">
                     ارتباط با ما
@@ -48,7 +82,7 @@
         <div class="row my-3 mx-5">
             <div class="accordion w-50 col-10">
                 <div class="accordion-item bg-warning-subtle">
-                    <h2 class="accordion-header"><button class="accordion-button bg-danger-subtle border-0"
+                    <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle border-0 fs-3"
                             data-bs-toggle="collapse" data-bs-target="#accordian1">ثبت نام</button></h2>
                     <div class="collapse accordion-collapse" id="accordian1">
                         <div class="accordion-body">
@@ -57,7 +91,7 @@
                                     <h1 class="card-title">ثبت نام</h1>
                                 </div>
                                 <div class="card-body">
-                                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#heremod">برای
+                                    <button class="btn btn-light fs-5" data-bs-toggle="modal" data-bs-target="#heremod">برای
                                         ادامه کلیک کنید</button>
                                     <div class="modal" id="heremod">
                                         <div class="modal-dialog">
@@ -106,8 +140,8 @@
                 </div>
             </div>
             <div class="accordion w-50 col-10">
-                <div class="accordion-item bg-danger-subtle">
-                    <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle border-0"
+                <div class="accordion-item bg-warning-subtle">
+                    <h2 class="accordion-header"><button class="accordion-button bg-warning-subtle border-0 fs-3"
                             data-bs-toggle="collapse" data-bs-target="#accordian2">ورود به سایت</button></h2>
                     <div class="collapse accordion-collapse" id="accordian2">
                         <div class="accordion-body">
@@ -116,7 +150,7 @@
                                     <h1 class="card-title">ورود به سایت</h1>
                                 </div>
                                 <div class="card-body">
-                                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#heremod1">برای
+                                    <button class="btn btn-light fs-5" data-bs-toggle="modal" data-bs-target="#heremod1">برای
                                         ادامه کلیک کنید</button>
                                     <div class="modal" id="heremod1">
                                         <div class="modal-dialog">
@@ -157,86 +191,81 @@
         </div>
     </div>
 
-    <nav class="row justify-content-center">
-        <div id="bay" class="col-12">
-            <img src="image/Screenshot 2024-01-14 164836_ml_resize_x2.jpg" id="hello">
+    <div>
+        <div>
+            <div id="carouselExampleInterval" class="carousel slide m-5 " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="image/Screenshot 2024-08-10 224643.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/Screenshot 2024-08-10 171504.png" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/Screenshot 2024-08-10 224627.png" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div><br><br>
         <div id="bscroll" class="mt-4 ">
             <h1>برخی از محصولات</h1>
             <hr><br><br>
         </div>
-        <div class="scroll col-12">
-            <div class="clothes" id="dfrn"><img src="image/Butterfly Print Drop Shoulder Hoodie.jpeg" alt="">
+        <div class="cloth_container">
+            <div class="clothes">
+                <img src="image/Butterfly Print Drop Shoulder Hoodie.jpeg" alt="">
                 <h6>سویشرت پروانه ای</h6>
                 <h6 class="text-decoration-line-through">500000</h6>
                 <h3 style="font-size: larger;">450000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/cargo skirt outfit.jpeg" alt="">
+            <div class="clothes">
+                <img src="image/cargo skirt outfit.jpeg" alt="">
                 <h6>تاپ توت فرنگی</h6>
                 <h3 style="font-size: larger;">120000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
+            <div class="clothes">
+                <img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
                 <h6>کاردیگن تیلور</h6>
                 <h3 style="font-size: larger;">100000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes"><img src="image/Plus Eye Pattern Drop Shoulder Sweater.jpeg" alt="">
-                <h6>بافت چشم</h6>
-                <h3 style="font-size: larger;">900000</h3>
-                <p class="btn btn-light">اضافه به سبد خرید</p>
-            </div>
-            <div class="clothes"><img src="image/ROMWE Fairycore Striped Pattern Turtleneck Bell Sleeve Sweater.jpeg"
-                    alt="">
-                <h6>بافت راه راه</h6>
-                <h3 style="font-size: larger;">800000</h3>
-                <p class="btn btn-light">اضافه به سبد خرید</p>
-            </div>
-            <div class="clothes"><img src="image/zibra.jpeg" alt="">
-                <h6>2بافت راه راه</h6>
-                <h3 style="font-size: larger;">800000</h3>
-                <p class="btn btn-light">اضافه به سبد خرید</p>
-            </div>
         </div>
+            
         <br><br>
         <div id="ascroll" class="my-4">
             <h1>پرطرفدار</h1>
             <hr>
         </div>
-        <div>
-    </nav>
-    <nav class="row justify-content-center">
-        <div class="scroll col-12">
-            <div class="clothes col" id="dfrn"><img src="image/Retro O-Neck Knitted Striped Sweater.jpeg" alt="">
-                <h6></h6>
+        <div class="cloth_container">
+            <div class="clothes" id="dfrn">
+                <img src="image/Retro O-Neck Knitted Striped Sweater.jpeg" alt="">
                 <h6 class="text-decoration-line-through">1000000</h6>
                 <h3 style="font-size: larger;">850000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes col"><img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
+            <div class="clothes"><img src="image/taylor swift cardigan outfit ♡ my photo!.jpeg" alt="">
                 <h6>کاردیگن تیلور سوییفت</h6>
                 <h3 style="font-size: larger;">1000000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes col"><img src="image/Multi Striped Flower Embroidery Sweater, US$36_00.jpeg" alt="">
+            <div class="clothes"><img src="image/Multi Striped Flower Embroidery Sweater, US$36_00.jpeg" alt="">
                 <h6>بافت رنگین کمونی</h6>
                 <h3 style="font-size: larger;">800000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes col"><img src="image/Tie Front Frill Trim Puff Sleeve Crop Tee.jpeg" alt="">
-                <h6>کراپ زرشکی</h6>
-                <h3 style="font-size: larger;">300000</h3>
-                <p class="btn btn-light">اضافه به سبد خرید</p>
-            </div>
-            <div class="clothes col"><img src="image/Tie Shoulder Ruched Two Layer Hem Cami Dress.jpeg" alt="">
-                <h6>پیراهن سبز پاستلی</h6>
-                <h3 style="font-size: larger;">600000</h3>
-                <p class="btn btn-light">اضافه به سبد خرید</p>
-            </div>
-            <div class="clothes col"><img src="image/mushrom.jpeg" alt="">
-                <h6>شلوارک قارچی</h6>
-                <h3 style="font-size: larger;">400000</h3>
+            <div class="clothes"><img src="image/Multi Striped Flower Embroidery Sweater, US$36_00.jpeg" alt="">
+                <h6>بافت رنگین کمونی</h6>
+                <h3 style="font-size: larger;">800000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
         </div><br><br>
@@ -244,32 +273,28 @@
             <h1>استایل کامل</h1>
             <hr>
         </div>
-        <div class="scroll col-1">
-            <div class="clothes2" style="margin-right: 10px;"><img src="image/KAWAII.jpeg" style="height: 394px;">
+        <div class="cloth_container">
+            <div class="clothes" style="margin-right: 10px;"><img src="image/KAWAII.jpeg">
                 <h4>استایل گرانچ</h4>
                 <h4 class="text-decoration-line-through">1000000</h4>
                 <h3 style="font-size: larger;">850000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div class="clothes2 col-1"><img src="image/Aesthetic Outfits for Early 2022 .jpeg" style="height: 394px;">
+            <div class="clothes"><img src="image/Aesthetic Outfits for Early 2022 .jpeg">
                 <div>
                     <h4>استایل فری گرانچ</h4>
                     <h3 style="font-size: larger;">1000000</h3>
                     <p class="btn btn-light">اضافه به سبد خرید</p>
                 </div>
             </div>
-            <div class="clothes2 col-1"><img
-                    src="image/Outfit Ideas 2023 Fall Outfits Comfy Outfits Fashion Everyday Looks Fashion Outfits.jpeg"
-                    alt="">
+            <div class="clothes"><img src="image/Outfit Ideas 2023 Fall Outfits Comfy Outfits Fashion Everyday Looks Fashion Outfits.jpeg">
                 <h4>استایل پاییزی</h4>
                 <h3 style="font-size: larger;">1200000</h3>
                 <p class="btn btn-light">اضافه به سبد خرید</p>
             </div>
-            <div style="width: 1000px;overflow: hidden;"></div>
         </div>
-
-    </nav>
-    <footer class="row justify-content-center mt-5">
+    </div>
+    <footer class="row mt-5">
         <div class="accordion w-100 d-inline-block col-12" id="aboutus">
             <div class="accordion-item">
                 <h3 class="accordion-header">
