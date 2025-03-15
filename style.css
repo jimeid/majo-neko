@@ -1,6 +1,6 @@
 @font-face {
     font-family:Salamat;
-    src: url(../Salamat.ttf);
+    src: url(files/Salamat.ttf);
 } 
 body{
     font-family: Salamat;
@@ -51,7 +51,7 @@ a{
     color: rgb(237, 74, 74);
 }
 .cloth_container{
-    background-image: url(../media/Download\ premium\ image\ of\ Paper\ texture\ background\,\ simple\ design\ by\ mook\ about\ plain\ cream\ background\,\ white\ paper\ texture\,\ paper\ texture\ background\,\ paper\ texture\,\ and\ cream\ paper\ texture\ 6418185.jpg);
+    background-image: url(media/Download\ premium\ image\ of\ Paper\ texture\ background\,\ simple\ design\ by\ mook\ about\ plain\ cream\ background\,\ white\ paper\ texture\,\ paper\ texture\ background\,\ paper\ texture\,\ and\ cream\ paper\ texture\ 6418185.jpg);
     border-radius: 30px;
     display: flex;
     overflow-x: scroll;
@@ -59,8 +59,8 @@ a{
     padding: 2%;
 }
 .clothes{
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    width: 200px; /* Adjust width as needed */
+    flex: 0 0 auto;
+    width: 200px; 
     text-align: center;
     background-color:  #ED9121;
     width: 300px;
