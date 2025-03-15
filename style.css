@@ -1,6 +1,6 @@
 @font-face {
     font-family:Salamat;
-    src: url(files/Salamat.ttf);
+    src: url(/files/Salamat.ttf);
 } 
 body{
     font-family: Salamat;
